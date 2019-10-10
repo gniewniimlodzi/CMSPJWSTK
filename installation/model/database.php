@@ -166,7 +166,7 @@ class InstallationModelDatabase extends JModelBase
 		);
 
 		// Check the security file if the db_host is not localhost / 127.0.0.1 / ::1
-		if ($shouldCheckLocalhost && !in_array($options->db_host, $localhost))
+		if (true)
 		{
 			$remoteDbFileTestsPassed = JFactory::getSession()->get('remoteDbFileTestsPassed', false);
 
