@@ -156,7 +156,7 @@ class InstallationModelDatabase extends JModelBase
 			return false;
 		}
 
-		$shouldCheckLocalhost = getenv('JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK') !== '1';
+		$shouldCheckLocalhost = getenv('JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK') !== '0';
 
 		// Per Default allowed DB Hosts
 		$localhost = array(
