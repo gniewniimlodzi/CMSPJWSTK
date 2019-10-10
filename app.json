@@ -1,0 +1,22 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "env": {
+    "JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK": "1"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "CMSPJWSTK",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
